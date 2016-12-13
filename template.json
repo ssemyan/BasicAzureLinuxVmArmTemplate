@@ -36,7 +36,7 @@
   "variables": {
     "vnetId": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
-    "storageAccountName": "[concat(resourceGroup().name, 'storage', substring(uniquestring(resourceGroup().name),0,3))]",
+    "storageAccountName": "[concat('storage', substring(uniquestring(resourceGroup().name),0,6))]",
     "virtualNetworkName": "[concat(resourceGroup().name, '-vnet')]",
     "networkInterfaceName": "[concat(parameters('virtualMachineName'), 'nic')]",
     "networkSecurityGroupName": "[concat(resourceGroup().name, '-nsq')]",
