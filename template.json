@@ -45,7 +45,7 @@
     "addressPrefix": "10.0.0.0/24",
     "subnetName": "default",
     "subnetPrefix": "10.0.0.0/24",
-    "publicIpAddressType": "Dynamic"
+    "publicIpAddressType": "Static"
   },
   "resources": [
     {
@@ -198,6 +198,10 @@
     "adminUsername": {
       "type": "string",
       "value": "[parameters('adminUsername')]"
+    },
+    "publicIpAddress": {
+      "type": "string",
+      "value": "[reference(variables('publicIpAddressName')).ipAddress]"
     }
   }
 }
