@@ -3,7 +3,7 @@ This is a basic Azure ARM Template and associated PowerShell deployment script t
 
 For a version of this script that deploys a Windows VM using Managed Disks see https://github.com/ssemyan/BasicAzureWindowsVmArmTemplate
 
-This code is referenced in the blog post [Creating Azure Resources with ARM Templates Step by Step](https://blogs.msdn.microsoft.com/cloud_solution_architect/2016/11/11/creating-azure-resources-with-arm-templates-step-by-step) that explains how the deployment script and JSON files work together to allow you to create resources in Azure. 
+This code is referenced in the blog post [Creating Azure Resources with ARM Templates Step by Step](https://ssemyan.github.io/devops/2016/11/11/arm-templates-step-by-step.html) that explains how the deployment script and JSON files work together to allow you to create resources in Azure. 
 
 This script will create the resource group in the selected location if it does not already exist. 
 
